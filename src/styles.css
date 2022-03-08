@@ -1,0 +1,41 @@
+.container {
+    margin: 0 auto;
+    max-width: 1120px;
+}
+
+h1 {
+    margin-top: 2rem;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-group input {
+    padding: 0.5rem 0.5rem;
+    background: whitesmoke;
+    border-radius: 0.25rem;
+    border: 1px solid lightgray;
+}
+
+button {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    font-weight: 700;
+    color: white;
+    background: black;
+    border: 0;
+    border-radius: 0.25rem;
+}
