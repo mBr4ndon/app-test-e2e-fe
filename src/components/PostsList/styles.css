@@ -1,0 +1,9 @@
+.list-posts {
+    margin-top: 2rem;
+}
+
+.post {
+    background-color: whitesmoke;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+}
