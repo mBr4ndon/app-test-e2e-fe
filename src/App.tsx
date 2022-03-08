@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
+import './styles.css';
 
-function App() {
+export default function App() {
   const [count, setCount] = useState(0)
 
   return (
@@ -26,7 +27,6 @@ function App() {
 
         </form>
       </div>
-  )
+  );
 }
 
-export default App
