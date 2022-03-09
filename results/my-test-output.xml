@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.1910" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-03-09T17:59:29" tests="0" file="cypress/integration/exemple_test.e2e.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Basic test to check core features" timestamp="2022-03-09T17:59:29" tests="1" time="2.1910" failures="0">
+    <testcase name="Basic test to check core features should be able to find element created" time="2.1910" classname="should be able to find element created">
+    </testcase>
+  </testsuite>
+</testsuites>

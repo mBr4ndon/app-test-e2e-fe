@@ -12,7 +12,8 @@ export default function App() {
     event.preventDefault();
     console.log(title, description);
 
-    await api.post('/posts', { title, description });
+    if (title && description)
+      await api.post('/posts', { title, description });
 
     // clear inputs
     setTitle('');
