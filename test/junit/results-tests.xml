@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="My Login application" timestamp="2022-03-10T18:09:00" time="3.157" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="My Login application"/>
+      <property name="capabilities" value="edge.99_0_1150_36.win32"/>
+      <property name="file" value=".\test\specs\example.e2e.js"/>
+    </properties>
+    <testcase classname="edge.99_0_1150_36.win32.My_Login_application" name="should visit a page" time="3.155">
+      <system-out><![CDATA[
+COMMAND: navigateTo - {"url":"http://localhost:3000/"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"input[name=title]"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"input[name=description]"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"button"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-1"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-1","text":"Title test"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-2"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-2","text":"Description test"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-3"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":".post"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":".post"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":".post"}
+RESULT: undefined
+COMMAND: findElementFromElement - {"elementId":"ELEMENT-5","using":"css selector","value":"h2"}
+RESULT: undefined
+COMMAND: getElementText - {"elementId":"ELEMENT-6"}
+RESULT: undefined
+COMMAND: deleteSession - {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
