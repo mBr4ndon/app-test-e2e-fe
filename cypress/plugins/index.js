@@ -1,22 +1,20 @@
-/// <reference types="cypress" />
-// ***********************************************************
-// This example plugins/index.js can be used to load plugins
-//
-// You can change the location of this file or turn off loading
-// the plugins file with the 'pluginsFile' configuration option.
-//
-// You can read more here:
-// https://on.cypress.io/plugins-guide
-// ***********************************************************
+const { Client } = require('pg');
 
-// This function is called when a project is opened or re-opened (e.g. due to
-// the project's config changing)
+async function queryTestDb(query) {
+    const client = new Client({
+        user: 'postgres',
+        host: 'localhost',
+        database: 'test-postgres-demo',
+        password: 'mysecretpassword',
+        port: 5432,
+    });
+    await client.connect();
 
-/**
- * @type {Cypress.PluginConfig}
- */
-// eslint-disable-next-line no-unused-vars
+    const res = await client.query(query);
+    await client.end();
+    return res;
+}
+
 module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
+    on('task', { queryDb: query => { return queryTestDb(query) }, })
 }
