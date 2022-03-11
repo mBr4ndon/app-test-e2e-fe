@@ -25,8 +25,9 @@ describe('My Login application', () => {
         await button.click();
 
         // check if h2 appeared
-        const h1WithTitleInfo = await $(".post").$("h2");
-        await expect(h1WithTitleInfo).toHaveText('Title test');
+        const h2WithTitleInfo = await $(".post").$("h2");
+        await h2WithTitleInfo.waitForDisplayed();
+        await expect(h2WithTitleInfo).toHaveText('Title test');
 
         // check database persistence
         const client = new Client({
