@@ -12,7 +12,8 @@ describe("Basic test to check core features", () => {
        cy.get('input[name=title]').type("title teste");
        cy.get('input[name=description]').type("description teste");
        cy.get('button').click();
-       cy.get('div.post').contains("title teste");
+       // cy.wait(6000);
+       cy.get('div.post', {timeout:50000}).contains("title teste");
 
        cy.task('queryDb', 'SELECT NOW()').then(result => {
            expect(result.rows.length).to.be.equal(1);
