@@ -44,7 +44,7 @@ export default function App() {
               />
             </div>
           </div>
-          <button>ADD POST</button>
+          <button className="btn-form">ADD POST</button>
         </form>
 
         <PostsList />

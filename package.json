@@ -5,10 +5,14 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "cucumber-js test/features/ -f json:test/report/cucumber_report.json && node test/reporters/index.js"
   },
   "dependencies": {
+    "@cucumber/cucumber": "^7.3.2",
     "axios": "^0.26.0",
+    "pg": "^8.7.3",
+    "puppeteer": "^13.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "socket.io-client": "^4.4.1"
@@ -19,6 +23,7 @@
     "@types/react-dom": "^17.0.10",
     "@types/socket.io-client": "^3.0.0",
     "@vitejs/plugin-react": "^1.0.7",
+    "cucumber-html-reporter": "^5.5.0",
     "typescript": "^4.5.4",
     "vite": "^2.8.0"
   }
