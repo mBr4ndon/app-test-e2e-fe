@@ -1,0 +1,72 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "I want to create a post",
+    "line": 1,
+    "id": "i-want-to-create-a-post",
+    "tags": [],
+    "uri": "create-post.feature",
+    "elements": [
+      {
+        "id": "i-want-to-create-a-post;creating-a-post",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Creating a post",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the website",
+            "result": {
+              "status": "passed",
+              "duration": 480000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I fill the title input with \"Test cy-cucumber title\"",
+            "result": {
+              "status": "passed",
+              "duration": 526000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I fill the description input with \"Test cy-cucumber description\"",
+            "result": {
+              "status": "passed",
+              "duration": 533000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click on the submit button",
+            "result": {
+              "status": "passed",
+              "duration": 101000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should have a post with the title \"Test cy-cucumber title\"",
+            "result": {
+              "status": "passed",
+              "duration": 5996000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
